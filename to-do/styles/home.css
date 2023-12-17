@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+.nav{
+    background: grey;
+    position: fixed;
+    width: 100%;
+}
+label{
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 80px; 
+    cursor: pointer;
+}
+
+nav{
+    float: right;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-right: 80px;
+    
+}
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: rgb(26, 51, 189);
+    border-radius: 10px;
+} 
+.slider{
+    position: fixed;
+    background: gray;
+    width: 250px;
+    height: 100%;
+    margin-top: 20px;
+    transform: translateX();
+}
+.slider center img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid rgb(234, 240, 5)
+}
+ol li a{
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.slider a{
+    line-height: 60px;
+    padding-left: 1px;
+    box-sizing: border-box;
+}
+.slider a:hover{
+    background: gray;
+    padding-left: 20px;
+}
+ol li a{
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.slider i{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    padding-right: 20px;
+}
+#menu{
+    display: none;
+}
+/* input{
+    -webkit-appeaon: none;
+    visibility: hidden;
+    display: none;
+} */
+/* span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+} */
+label #bars{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 25px 0;
+    transition: 0.5s;
+    transition-property: left;
+}
+label #bars:hover{
+color: rgb(234, 240, 5);
+}
+#check:checked ~ .slider{
+    left: -190px;
+}
+#check:checked ~ .slider a span{
+    display: none;
+}
+#check:checked ~ .slider a{
+    font-size: 20px;
+    margin-left: 190px;
+    width: 10px;
+    color: black;
+}
+/* #check::content ~ .content{
+    margin-left: 60px;
+} */
+#check{
+    display: none;
+     
+}
+
+
+
+
+
